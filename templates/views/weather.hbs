@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>headlinks}}
+
+<body>
+
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+      <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+            <div class="main_weatherpart">
+                <form class="form">
+                    <input type="text" id="cityName" placeholder="Enter City Name" autocomplete="off">
+                    <input type="submit" value="Search" id="submitbtn">
+                </form>
+            </div>
+
+            <div class="output">
+                <div class="toplayer">
+                    <p id="day">Tuesday</p>
+                    <p id = "date">15 SEP</p>
+                </div>
+                <div class="mainlayer">
+                    <p id="cityname">Get Output Here</p>
+                    
+                    <div class="tempshow data_hide">
+                        <p id="temp"><span id="temp_real">0</span><sup>o</sup>C</p>
+                        <p id="tempstatus"> <i class="fas fa-cloud"></i> </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+   {{>footer}}
+
+   <script src="jsfiles/scripttogetdata.js"></script>
+
+</body>
+</html>
